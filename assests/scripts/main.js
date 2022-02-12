@@ -67,7 +67,11 @@ document.addEventListener("click", function (event) {
     var sectionToScroll = document.querySelector(event.target.hash);
 
     if (window.scrollY !== undefined) {
-      window.scrollTo({ top: sectionToScroll.getClientRects()[0].top + window.scrollY, behavior: scrollBehavior });
+      sectionToScroll.scrollIntoView({
+        behavior: scrollBehavior,
+        block: "start",
+        inline: "start",
+      });
     } else {
       window.location.href = event.target.href;
     }
