@@ -20,7 +20,7 @@
   /* ---------------------INTRODUCTION---------------------- */
   .introduction {
     padding: 0 10px;
-    min-height: 320px;
+    height: 320px;
   }
 
   .introduction-service h3 {
@@ -136,7 +136,7 @@
   /* ---------------------INTRODUCTION---------------------- */
   .introduction {
     flex-direction: column;
-    min-height: 320px;
+    height: 320px;
   }
 
   .introduction-service h3 {
@@ -145,6 +145,11 @@
 
   .introduction-company img {
     width: 90%;
+  }
+
+  .information-details span {
+    bottom: 5px;
+    top: unset;
   }
 
   .introduction-company {
@@ -185,6 +190,10 @@
   }
 
   /* ---------------------FAQ---------------------- */
+  .prepare {
+    padding: 5px 0;
+  }
+
   .prepare table td ul {
     padding: 0;
     list-style: none;

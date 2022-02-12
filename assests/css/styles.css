@@ -95,11 +95,6 @@ body {
   color: var(--blue-600);
 }
 
-.menu-item:active {
-  color: #2563eb;
-  color: var(--blue-600);
-}
-
 .active {
   color: #2563eb;
   color: var(--blue-600);
@@ -128,7 +123,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 480px;
+  height: 480px;
   max-width: 1200px;
   width: 100%;
 }
@@ -474,7 +469,7 @@ section {
 footer {
   background-color: #fff;
   border-top: 1px solid #9ca3af;
-  min-height: 64px;
+  height: 64px;
   display: flex;
   justify-content: center;
   align-items: center;
