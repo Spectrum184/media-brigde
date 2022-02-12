@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ネットワーキング統合サービス | MEDIA BRIDGE</title>
+    <link rel="icon" href="./assests/images/favicon.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Charm&family=Noto+Serif+JP:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="./assests/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="./assests/css/reponsive.css" />
+    <meta name="keywords" content="keywords" content="ネットワーキング統合サービス | MEDIA BRIDGE" />
+    <meta name="description" content="ネットワーキング統合サービス | MEDIA BRIDGE" />
+    <meta name="author" content="ネットワーキング統合サービス | MEDIA BRIDGE" />
+
+    <meta itemprop="name" content="ネットワーキング統合サービス | MEDIA BRIDGE" />
+    <meta itemprop="description" content="ネットワーキング統合サービス | MEDIA BRIDGE" />
+    <meta itemprop="image" content="" />
+    <meta property="og:locale" content="jp" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="ネットワーキング統合サービス | MEDIA BRIDGE" />
+    <meta property="og:description" content="ネットワーキング統合サービス | MEDIA BRIDGE" />
+    <meta property="og:site_name" content="ネットワーキング統合サービス | MEDIA BRIDGE" />
+
+    <!-- requestAnimationFrame polyfill -->
+    <!--[if IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/raf-polyfill@1.0.0/raf.min.js"></script>
+    <![endif]-->
+
+    <!-- scrollBehavior polyfill for IE and Safari I really give up with vanilla js-->
+    <script>
+      if (!("scrollBehavior" in document.documentElement.style)) {
+        var js = document.createElement("script");
+        js.src = "https://cdn.jsdelivr.net/npm/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js";
+        document.head.appendChild(js);
+      }
+    </script>
+  </head>
+
+  <body>
+    <!-- ---------------------HEADER---------------------- -->
+    <header class="header" id="header">
+      <div class="header-mobile">
+        <span id="home">
+          <svg xmlns="http://www.w3.org/2000/svg" class="header-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+            />
+          </svg>
+        </span>
+        <span id="toggle-menu">
+          <svg xmlns="http://www.w3.org/2000/svg" class="header-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+        </span>
+      </div>
+      <div class="nav">
+        <a id="home-logo" href="" class="logo">
+          <img src="./assests/images/logo.png" alt="logo" class="logo-image" />
+        </a>
+        <ul class="menu">
+          <li class="menu-item" id="">
+            <a href="#information" class="menu-link">提供サービス</a>
+          </li>
+          <li class="menu-item">
+            <a href="#system" class="menu-link">サービスの仕組み</a>
+          </li>
+          <li class="menu-item">
+            <a href="#faq" class="menu-link">FAQ</a>
+          </li>
+          <li class="menu-item">
+            <a href="#plan" class="menu-link">サービスプラン</a>
+          </li>
+          <li class="menu-item">
+            <a href="#introduction" class="menu-link">登録</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- ---------------------INTRODUCTION---------------------- -->
+    <div class="header-info">
+      <div class="introduction" id="introduction">
+        <div class="introduction-service">
+          <h3>V6プラスTM 接続サービス</h3>
+          <h3>Bizコネクトwith FCプラン</h3>
+        </div>
+        <div class="introduction-company">
+          <h4>Borderless Mind</h4>
+          <img src="./assests/images/icon.jpg" alt="icon" />
+          <h5>Media Bridge Co.</h5>
+        </div>
+      </div>
+    </div>
+    <!-- ---------------------MAIN---------------------- -->
+    <div class="main">
+      <!-- ---------------------INFORMATION---------------------- -->
+      <section class="information" id="information">
+        <div class="section-title">
+          <span>提供サービス概要</span>
+        </div>
+        <div class="section-content">
+          <div class="information-details">
+            <p>JPNE社のv6プラス™を技術ベースとする接続サービスです。<span>※1※2</span></p>
+            <ul>
+              <li>IPoE接続による IPv4 と IPv6 の両通信が可能、標準で固定 IPv4 アドレスが1個ついています</li>
+              <li>マンション全戸一括やホテル全室などのインターネット接続に利用できます<span>※3</span></li>
+              <li>『公平性制御』技術を使い、一定の通信品質を維持します<span>※4</span></li>
+            </ul>
+          </div>
+          <div class="network-line">
+            <div class="network-line-image">
+              <p>回線の利用イメージ</p>
+              <img src="./assests/images/network-line.png" alt="network-line-image" />
+            </div>
+            <div class="network-line-detail">
+              <div class="line-detail-top">
+                <div class="line-bandwidth">
+                  <img src="./assests/images/detail-network-line.png" alt="detail-network-line" />
+                  <p>本サービス用専用帯域(3プラン)</p>
+                </div>
+                <div class="line-bandwidth">
+                  <img src="./assests/images/network-item.png" alt="network-item" />
+                  <p>1回線当たりの利用量</p>
+                </div>
+              </div>
+              <ul>
+                <li>本サービス用に確保された帯域を複数のユーザーで共</li>
+                <li>共有数による3プランを準備、切断無しに切替が可能</li>
+                <li>プラン全体の帯域が圧迫された場合は公平性制御を実施</li>
+              </ul>
+            </div>
+          </div>
+          <div class="network-line-note">
+            <ul>
+              <li>※1本サービスは JPNE 社提供の<span>『v6プラス』とは異なります。</span></li>
+              <li>※2回線および機器は別途、御社にてご準備ください。</li>
+              <li>※3ほかの弊社 ISP サービスは個人あるいはオフィスでの利用以外はお断りしています。</li>
+              <li>※4通信品質を補償するものではありません。</li>
+              <li>『v6プラス』『v6plus』は日本ネットワークイネイブラー株式会社(JPNE)の登録商標です。 </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!--  ---------------------SYSTEM---------------------- -->
+      <section class="system" id="system">
+        <div class="section-title">
+          <span>サービスの仕組み</span>
+        </div>
+        <div class="system-image">
+          <img src="./assests/images/system.png" alt="system" />
+        </div>
+      </section>
+      <!-- ---------------------FAQ---------------------- -->
+      <section class="faq" id="faq">
+        <div class="section-title">
+          <span>サービスの仕組み</span>
+        </div>
+        <!-- ---------------------PREPARE---------------------- -->
+        <div class="prepare">
+          <table>
+            <thead>
+              <tr>
+                <th></th>
+                <th>頭目</th>
+                <th>備考</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>回線</td>
+                <td>NTTフレッツ光ネクスト (または光コラボレーション回線)</td>
+                <td
+                  ><ul>
+                    <li>左記以外の回線では利用できません。</li>
+                    <li>既にIPoE接続されている場合は、事前にIPoE接続の解除が必要です。</li>
+                  </ul></td
+                >
+              </tr>
+              <tr>
+                <td>機器</td>
+                <td>V6プラス 固定 IP 対応機器</td>
+                <td
+                  ><ul>
+                    <li>対応機召一覧(https://bit.ly/v6plus_kotol)にてご確認ください。</li>
+                    <li>NTIオフィスゲートウェイの古い機種は利用できません。</li>
+                  </ul></td
+                >
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="section-title">
+          <span>よくある質問</span>
+        </div>
+        <!-- ---------------------Q&A---------------------- -->
+        <div class="qna">
+          <div class="question">
+            <div class="question-item">
+              <span>Q</span>
+              <p>利用帯域が保証されますか?</p>
+            </div>
+            <span class="arrow"></span>
+          </div>
+          <div class="answers">
+            <span>A</span>
+            <p>帯域保証ではなくベストエフォートですが、公平期間により一定の通信品質で提供します</p>
+          </div>
+        </div>
+        <div class="qna">
+          <div class="question">
+            <div class="question-item">
+              <span>Q</span>
+              <p>転送量の制限はありますか?</p>
+            </div>
+            <span class="arrow"></span>
+          </div>
+          <div class="answers">
+            <span>A</span>
+            <p>一切ありません</p>
+          </div>
+        </div>
+        <div class="qna">
+          <div class="question">
+            <div class="question-item">
+              <span>Q</span>
+              <p>JPNE社の「V6プラス」との違いは何ですか?</p>
+            </div>
+            <span class="arrow"></span>
+          </div>
+          <div class="answers">
+            <span>A</span>
+            <p>技術的な仕様としては公平性制御の有無のみです(※サービスとしては異なります)</p>
+          </div>
+        </div>
+        <div class="qna">
+          <div class="question">
+            <div class="question-item">
+              <span>Q</span>
+              <p>公平性制御の実施状況は施認できますか?</p>
+            </div>
+            <span class="arrow"></span>
+          </div>
+          <div class="answers">
+            <span>A</span>
+            <p>設備の仕様上、確認できません。</p>
+          </div>
+        </div>
+        <div class="qna">
+          <div class="question">
+            <div class="question-item">
+              <span>Q</span>
+              <p>固定IPv4アドレスを設定せずに非限定で利用できますか?</p>
+            </div>
+            <span class="arrow"></span>
+          </div>
+          <div class="answers">
+            <span>A</span>
+            <p>技術的には可能ですが、本サービスの利用形態には返さないため推奨しません。</p>
+          </div>
+        </div>
+        <div class="qna">
+          <div class="question">
+            <div class="question-item">
+              <span>Q</span>
+              <p>複数の固定IPv4アドレスを利用できますか?</p>
+            </div>
+            <span class="arrow"></span>
+          </div>
+          <div class="answers">
+            <span>A</span>
+            <p>現在のところ 1Pのみの提供ですが、ご要望に応して、81P、161Pについても検証可です</p>
+          </div>
+        </div>
+      </section>
+      <!--  ---------------------PLAN---------------------- -->
+      <section class="plan" id="plan">
+        <div class="section-title">
+          <span>提供サービスプラン</span>
+        </div>
+        <div class="plan-content">
+          <h3>基準帯域の共有数により3プランを提供します</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>プラン</th>
+                <th>参考価格(税別)</th>
+                <th>備考</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Bizコネクト with FC プランS</td>
+                <td>5,800円/月</td>
+                <td>共有数が多いプランです</td>
+              </tr>
+              <tr>
+                <td>Bizコネクト with FC プランM</td>
+                <td>9,800円/月</td>
+                <td>標準的な共有数のプランです</td>
+              </tr>
+              <tr>
+                <td>Bizコネクト with FC プランL</td>
+                <td>14,800円/月</td>
+                <td>共有数が少ないプランです</td>
+              </tr>
+            </tbody>
+          </table>
+          <span>※参考価格はエンドユーザーへ提供する価格の一例です。</span>
+          <span class="plan-note">※初期費用、その他の手数料などはありません。</span>
+        </div>
+        <div class="plan-content">
+          <h3>御社向け提供価格</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>プラン</th>
+                <th>参考価格(税別)</th>
+                <th>備考</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Bizコネクト with FC プランS</td>
+                <td>4,800円/月</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Bizコネクト with FC プランM</td>
+                <td>8,400円/月</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Bizコネクト with FC プランL</td>
+                <td>13,000円/月</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+    <span class="scroll-top">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 11l3-3m0 0l3 3m-3-3v8m0-13a9 9 0 110 18 9 9 0 010-18z" />
+      </svg>
+    </span>
+    <!-- ---------------------FOOTER---------------------- -->
+    <footer class="footer" id="footer">
+      <div class="footer-content">
+        <span>ネットワーキング統合サービス</span>
+        <span>Copyright © MediaBridge. All rights reserved.</span>
+      </div>
+    </footer>
+    <script src="./assests/scripts/main.js"></script>
+  </body>
+</html>

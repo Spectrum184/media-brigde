@@ -1,0 +1,494 @@
+:root {
+  --white-color: #fff;
+  --text-color: #333;
+  --gray-600: #4b5563;
+  --gray-200: #f9fafb;
+  --gray-300: #d1d5db;
+  --gray-400: #94a3b8;
+  --blue-700: #1e40af;
+  --blue-600: #2563eb;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Noto Serif JP", serif, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: var(--white-color);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.show-element {
+  display: block;
+}
+
+.hide-element {
+  display: none;
+}
+
+/* ---------------------HEADER---------------------- */
+.header-mobile {
+  display: none;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  min-height: 64px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  width: 100%;
+  background-color: #fff;
+  background-color: var(--white-color);
+  z-index: 50;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.nav {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 64px;
+}
+
+.nav ul {
+  padding: 0;
+}
+
+.header .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu-item {
+  margin: 0 12px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-link {
+  text-decoration: none;
+  height: 100%;
+  color: #333;
+  color: var(--text-color);
+}
+
+.menu-link:hover {
+  color: #2563eb;
+  color: var(--blue-600);
+}
+
+.menu-item:active {
+  color: #2563eb;
+  color: var(--blue-600);
+}
+
+.active {
+  color: #2563eb;
+  color: var(--blue-600);
+}
+
+/* ---------------------INTRODUCTION---------------------- */
+.header-info::before {
+  display: block;
+  content: "";
+  margin-top: -64px;
+  height: 64px;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.header-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+}
+
+.introduction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 480px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.introduction-service {
+  font-weight: 600;
+  font-size: 24px;
+  color: #4b5563;
+  color: var(--gray-600);
+}
+
+.introduction-company {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.introduction-company {
+  color: #4b5563;
+  color: var(--gray-600);
+}
+
+.introduction-company h4 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-family: "Charm", cursive;
+}
+
+.introduction-company h5 {
+  margin-top: 10px;
+}
+
+/* ---------------------MAIN---------------------- */
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: aliceblue;
+  padding: 30px 0;
+  border: 3px;
+}
+
+section {
+  max-width: 1200px;
+  width: 100%;
+  min-height: 480px;
+  padding: 20px 10px;
+  background-color: #fff;
+  background-color: var(--white-color);
+}
+
+.section-title {
+  width: 100%;
+  background-color: #2563eb;
+  background-color: var(--blue-600);
+  padding: 5px 10px 5px;
+  border-radius: 3px;
+}
+
+.section-title span {
+  font-size: 32px;
+  font-weight: 600;
+  color: #fff;
+  color: var(--white-color);
+}
+
+.section-content {
+  padding: 0 20px;
+}
+
+/* ---------------------INTRODUCTION---------------------- */
+.information {
+  display: flex;
+  flex-direction: column;
+}
+
+.information-details p {
+  font-size: 20px;
+  font-weight: 500;
+  position: relative;
+}
+
+.information-details span {
+  font-size: 12px;
+  position: absolute;
+  top: 0;
+  margin-left: 2px;
+}
+
+.information-details ul > li {
+  position: relative;
+}
+
+.network-line {
+  border: 1px solid black;
+  width: 100%;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  background-color: #fff;
+  background-color: var(--white-color);
+}
+
+.network-line .network-line-image {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.network-line .network-line-image p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-decoration: underline;
+}
+
+.network-line .network-line-image img {
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+}
+
+.network-line .network-line-detail {
+  width: 50%;
+}
+
+.network-line-detail .line-detail-top {
+  display: flex;
+  flex-direction: column;
+}
+
+.network-line-detail .line-detail-top .line-bandwidth {
+  display: flex;
+  align-items: center;
+}
+
+.line-detail-top .line-bandwidth p {
+  margin-left: 10px;
+}
+
+.network-line-note ul > li {
+  list-style: none;
+  font-size: 14px;
+}
+
+.network-line-note span {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* ---------------------SYSTEM---------------------- */
+.system-image {
+  width: 100%;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  min-height: 480px;
+  padding: 10px;
+}
+
+.system-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* ---------------------FAQ---------------------- */
+/* ---------------------PREPARE---------------------- */
+.prepare {
+  width: 100%;
+  padding: 5px 10px;
+}
+
+.prepare table {
+  width: 100%;
+}
+
+.prepare table th,
+.prepare table td {
+  padding: 5px;
+}
+
+.prepare table th {
+  background-color: #333;
+  color: #fff;
+}
+
+.prepare table td:first-child {
+  background-color: #1e40af;
+  background-color: var(--blue-700);
+  color: #fff;
+  min-width: 80px;
+  text-align: center;
+}
+
+.prepare table td:nth-child(2) {
+  background-color: #f9fafb;
+  background-color: var(--gray-200);
+  color: #1e40af;
+  color: var(--blue-700);
+}
+
+.prepare table td:last-child {
+  background-color: #f9fafb;
+  background-color: var(--gray-200);
+}
+
+/* ---------------------Q&A---------------------- */
+.qna {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 10px;
+}
+
+.qna .question {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d1d5db;
+  background-color: var(--gray-300);
+  border-radius: 3px;
+}
+
+.question .question-item {
+  display: flex;
+  align-items: center;
+}
+
+.question .question-item span {
+  background-color: rgb(224, 26, 66);
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  color: #fff;
+  border-radius: 3px;
+  margin: 0 5px;
+  flex-shrink: 0;
+}
+
+.question .arrow {
+  content: "";
+  border-width: 8px 8px;
+  border-style: solid;
+  border-color: transparent transparent transparent #9ca3af;
+}
+
+.qna .answers {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  background-color: #d1d5db;
+  background-color: var(--gray-300);
+  margin-left: 10px;
+  border-radius: 3px;
+}
+
+.qna .answers span {
+  background-color: #1e40af;
+  background-color: var(--blue-700);
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  color: #fff;
+  border-radius: 3px;
+  margin: 0 5px;
+  flex-shrink: 0;
+}
+
+/* ---------------------PLAN---------------------- */
+.plan,
+.plan-content {
+  width: 100%;
+}
+
+.plan-content {
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.plan-content h3 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.plan-content table {
+  width: 100%;
+}
+
+.plan-content table th,
+.plan-content table td {
+  padding: 5px;
+}
+
+.plan-content table th {
+  color: #fff;
+  background-color: gray;
+  font-size: 20px;
+}
+
+.plan-content table td {
+  color: black;
+  background-color: #d1d5db;
+  background-color: var(--gray-300);
+}
+
+.plan-content span {
+  font-size: 14px;
+}
+
+.plan-content .plan-note {
+  color: red;
+}
+
+/* ---------------------SCROLL TOP---------------------- */
+.scroll-top {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background-color: #2563eb;
+  background-color: var(--blue-600);
+  color: #fff;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  z-index: 50;
+  cursor: pointer;
+}
+
+.scroll-top svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* ---------------------FOOTER---------------------- */
+footer {
+  background-color: #fff;
+  border-top: 1px solid #9ca3af;
+  min-height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.footer-content span {
+  font-size: 12px;
+}
