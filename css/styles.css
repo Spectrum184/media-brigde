@@ -643,6 +643,55 @@ footer p {
   display: block;
 }
 
+/* ------------------REGISTER---------------------- */
+.header-register {
+  height: 60px;
+  background-color: #0769ad;
+  background-color: var(--main-color);
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.header-register a {
+  color: #ffffff;
+  color: var(--background-color);
+  display: flex;
+  align-items: center;
+}
+
+.register .contact-info-item {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.register .contact-info svg {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  color: #0769ad;
+  display: block;
+  left: 0;
+  top: 0;
+  line-height: 38px;
+}
+
+.register .contact-info h3 {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0 50px;
+}
+
+.register .contact-info p {
+  font-size: 14px;
+  font-weight: 300;
+  margin: 0 50px;
+}
+
+.register .contact-form .form-group {
+  margin-bottom: 25px;
+}
+
 /* ------------------RESPONSIVE---------------------- */
 @media only screen and (max-width: 991px) {
   .section-padding {
