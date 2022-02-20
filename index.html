@@ -10,8 +10,8 @@
     <title>ネットワーキング統合サービス | MEDIA BRIDGE</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/styles.css" />
-    <meta name="keywords" content="keywords" content="ネットワーキング統合サービス | MEDIA BRIDGE" />
-    <meta name="description" content="ネットワーキング統合サービス | MEDIA BRIDGE" />
+    <meta name="keywords" content="keywords" content="V6プラスTM 接続サービス,Bizコネクトwith FCプラン,Network System Integration Service, MEDIA BRIDGE" />
+    <meta name="description" content="ネットワーキング統合サービス" />
     <meta name="author" content="ネットワーキング統合サービス | MEDIA BRIDGE" />
 
     <meta itemprop="name" content="ネットワーキング統合サービス | MEDIA BRIDGE" />
@@ -20,7 +20,7 @@
     <meta property="og:locale" content="jp" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="ネットワーキング統合サービス | MEDIA BRIDGE" />
-    <meta property="og:description" content="ネットワーキング統合サービス | MEDIA BRIDGE" />
+    <meta property="og:description" content="ネットワーキング統合サービス" />
     <meta property="og:site_name" content="ネットワーキング統合サービス | MEDIA BRIDGE" />
     <!--[if lt IE 7]>
       <html class="no-js lt-ie9 lt-ie8 lt-ie7" prefix="og: http://ogp.me/ns#"><![endif]-->
@@ -78,9 +78,12 @@
           <div class="col-md-7">
             <div class="home-text my-5 my-md-0">
               <h1 class="text-center">V6プラスTM 接続サービス </h1>
-              <p class="text-center"> Bizコネクトwith FCプラン</p>
+              <h1 class="text-center"> Bizコネクトwith FCプラン</h1>
               <div class="home-btn d-flex justify-content-center">
-                <button type="button" class="btn register-btn btn-normal">直ぐに登録</button>
+                <form action="./registration.php" method="get">
+                  <input type="text" name="plan" value="1" hidden />
+                  <button type="submit" class="btn register-btn btn-normal">直ぐに登録</button>
+                </form>
               </div>
             </div>
           </div>
@@ -293,60 +296,73 @@
           </div>
         </div>
       </div>
-      <div class="container">
-        <div class="row mb-3">
-          <div class="col-lg-8 text-left">
-            <h2>* 基準帯域の共有数により3プランを提供します</h2>
-          </div>
-        </div>
+      <div class="container mt-4">
         <div class="row">
           <div class="col-lg-4 col-md-6">
-            <div class="price-plan">
-              <div class="price-header">
-                <h3>Bizコネクト with FC プランS</h3>
+            <form action="./registration.php" method="get">
+              <input type="text" hidden name="plan" value="1" />
+              <div class="price-plan">
+                <div class="price-header">
+                  <h3>Bizコネクト with FC プランS</h3>
+                </div>
+                <div class="price-money">
+                  <span class="currency">¥</span>
+                  <span class="price">4,800</span>
+                  <span class="period">/月</span>
+                </div>
+                <div class="price-body">
+                  <div class="d-flex justify-content-center"><p>5,800円/月</p><span>※</span></div>
+                  <p>共有数が多いプランです</p>
+                </div>
+                <div class="price-footer">
+                  <button type="submit" class="btn btn-price">登録</button>
+                </div>
               </div>
-              <div class="price-money">
-                <span class="currency">¥</span>
-                <span class="price">5,800</span>
-                <span class="period">/月</span>
-              </div>
-              <div class="price-body"><p>共有数が多いプランです</p></div>
-              <div class="price-footer">
-                <a href="./registration.html" class="btn btn-price">登録</a>
-              </div>
-            </div>
+            </form>
           </div>
           <div class="col-lg-4 col-md-6 my-4 my-md-0">
-            <div class="price-plan">
-              <div class="price-header">
-                <h3>Bizコネクト with FC プランM</h3>
+            <form action="./registration.php" method="get">
+              <input type="text" hidden name="plan" value="2" />
+              <div class="price-plan">
+                <div class="price-header">
+                  <h3>Bizコネクト with FC プランM</h3>
+                </div>
+                <div class="price-money">
+                  <span class="currency">¥</span>
+                  <span class="price">8,400</span>
+                  <span class="period">/月</span>
+                </div>
+                <div class="price-body">
+                  <div class="d-flex justify-content-center"><p>9,800円/月</p><span>※</span></div>
+                  <p>標準的な共有数のプランです</p>
+                </div>
+                <div class="price-footer">
+                  <button type="submit" class="btn btn-price">登録</button>
+                </div>
               </div>
-              <div class="price-money">
-                <span class="currency">¥</span>
-                <span class="price">9,800</span>
-                <span class="period">/月</span>
-              </div>
-              <div class="price-body"><p>標準的な共有数のプランです</p></div>
-              <div class="price-footer">
-                <a href="./registration.html" class="btn btn-price">登録</a>
-              </div>
-            </div>
+            </form>
           </div>
           <div class="col-lg-4 col-md-6">
-            <div class="price-plan">
-              <div class="price-header">
-                <h3>Bizコネクト with FC プランL</h3>
+            <form action="./registration.php" method="get">
+              <input type="text" hidden name="plan" value="3" />
+              <div class="price-plan">
+                <div class="price-header">
+                  <h3>Bizコネクト with FC プランL</h3>
+                </div>
+                <div class="price-money">
+                  <span class="currency">¥</span>
+                  <span class="price">13,000</span>
+                  <span class="period">/月</span>
+                </div>
+                <div class="price-body">
+                  <div class="d-flex justify-content-center"><p>14,800円/月</p><span>※</span></div>
+                  <p>共有数が少ないプランです</p>
+                </div>
+                <div class="price-footer">
+                  <button type="submit" class="btn btn-price">登録</button>
+                </div>
               </div>
-              <div class="price-money">
-                <span class="currency">¥</span>
-                <span class="price">14,800</span>
-                <span class="period">/月</span>
-              </div>
-              <div class="price-body"><p>共有数が少ないプランです</p></div>
-              <div class="price-footer">
-                <a href="./registration.html" class="btn btn-price">登録</a>
-              </div>
-            </div>
+            </form>
           </div>
         </div>
         <div class="row">
@@ -354,60 +370,6 @@
             <li>※参考価格はエンドユーザーへ提供する価格の一例です。</li>
             <li class="text-danger">※初期費用、その他の手数料などはありません。</li>
           </ul>
-        </div>
-      </div>
-      <div class="container mt-4">
-        <div class="row mb-3">
-          <div class="col-lg-8 text-left">
-            <h2>* 御社向け提供価格</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 col-md-6">
-            <div class="price-plan">
-              <div class="price-header">
-                <h3>Bizコネクト with FC プランS</h3>
-              </div>
-              <div class="price-money">
-                <span class="currency">¥</span>
-                <span class="price">4,800</span>
-                <span class="period">/月</span>
-              </div>
-              <div class="price-footer">
-                <a href="./registration.html" class="btn btn-price">登録</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 my-4 my-md-0">
-            <div class="price-plan">
-              <div class="price-header">
-                <h3>Bizコネクト with FC プランM</h3>
-              </div>
-              <div class="price-money">
-                <span class="currency">¥</span>
-                <span class="price">8,400</span>
-                <span class="period">/月</span>
-              </div>
-              <div class="price-footer">
-                <a href="./registration.html" class="btn btn-price">登録</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="price-plan">
-              <div class="price-header">
-                <h3>Bizコネクト with FC プランL</h3>
-              </div>
-              <div class="price-money">
-                <span class="currency">¥</span>
-                <span class="price">13,000</span>
-                <span class="period">/月</span>
-              </div>
-              <div class="price-footer">
-                <a href="./registration.html" class="btn btn-price">登録</a>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
