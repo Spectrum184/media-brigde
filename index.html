@@ -65,7 +65,10 @@
               <a class="nav-link" data-scroll-nav="5" href>サービスプラン</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./registration.html">登録</a>
+              <form action="./registration.php" method="get">
+                <input type="text" name="plan" value="1" hidden />
+                <a href="javascript:;" onclick="parentNode.submit();" class="nav-link">登録</a>
+              </form>
             </li>
           </ul>
         </div>
