@@ -76,14 +76,14 @@ svg {
 }
 
 .btn-price {
-  background-color: #ffffff;
-  color: #0769ad;
+  background-color: #0769ad;
+  color: #ffffff;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  background-color: var(--main-color);
+  /* background-color: var(--main-color); */
   padding: 12px 30px;
   border: none;
   border-radius: 30px;
-  color: var(--background-color);
+  /* color: var(--background-color); */
   font-size: 16px;
   text-transform: capitalize;
   transition: all 0.5s ease;
@@ -448,7 +448,7 @@ svg {
   width: 100%;
   height: 100%;
   background-color: #0769ad;
-  background-color: var(--main-color);
+  /* background-color: var(--main-color); */
   transition: all 0.5s ease;
   z-index: -1;
   opacity: 0;
@@ -523,7 +523,7 @@ svg {
 
 .faq .accordion-header:not(.collapsed) {
   background-color: #0769ad;
-  background-color: var(--main-color);
+  /* background-color: var(--main-color); */
 }
 
 .faq .accordion-header:not(.collapsed) h3,
@@ -581,7 +581,7 @@ svg {
   font-size: 70px;
   font-weight: 800;
   color: #0769ad;
-  color: var(--main-color);
+  /* color: var(--main-color); */
   line-height: 0.9;
 }
 
@@ -636,7 +636,7 @@ footer p {
   height: 40px;
   width: 40px;
   background-color: #0769ad;
-  background-color: var(--main-color);
+  /* background-color: var(--main-color); */
   z-index: 1000;
   color: #ffffff;
   text-align: center;
