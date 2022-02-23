@@ -36,6 +36,13 @@ $(document).ready(function () {
     window.location.href = "./registration.html";
   });
 
+  // check input radio
+  $(".plan .plan-details").on("click", function (e) {
+    if (e.target.children && e.target.children.length > 0) {
+      $("#" + e.target.children[0].id).prop("checked", true);
+    }
+  });
+
   // Page scrolling
   $.scrollIt({
     topOffset: 0,
