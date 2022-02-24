@@ -267,7 +267,7 @@
     ネットワーキング統合サービスからお問い合わせが届きました.
     -----------------------------------------------------
 
-    登録者名: {$arrayData['name']} ({$arrayData['nameKana']})
+    名前: {$arrayData['name']} ({$arrayData['nameKana']})
     電話番号: {$arrayData['phone']}
     メールアドレス: {$arrayData['email']}
     プラン: {$arrayData['plan']}
@@ -278,7 +278,7 @@
     Media Bridge registration form program.";
 
 
-    mail(MAIL_ADDRESS, $subject, $message, $headers);
+    mail(MAIL_ADDRESS, $subject, mb_convert_encoding($message, 'ISO-2022-JP', "UTF-8"), $headers);
 
     echo ("<script>location.href = '" . COMPLETE_URL . "';</script>");
   }
